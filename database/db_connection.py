@@ -3,7 +3,6 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 def get_db_connection():
@@ -18,14 +17,13 @@ def get_db_connection():
         )
         return conn
     except Exception as e:
-        print("❌ Database connection failed")
+        print("Database connection failed")
         print(e)
         return None
 
 
-# Optional test (run this file directly to check connection)
 if __name__ == "__main__":
     connection = get_db_connection()
     if connection:
-        print("✅ Database connected successfully")
+        print(" Database connected successfully")
         connection.close()

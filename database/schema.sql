@@ -4,10 +4,6 @@ CREATE DATABASE dayflow_hrms;
 CREATE SCHEMA hrms;
 SET search_path TO hrms;
 
--- =========================
--- USERS TABLE (FINAL)
--- =========================
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
 
