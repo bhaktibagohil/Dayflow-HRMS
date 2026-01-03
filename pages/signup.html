@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up - Dayflow HRMS</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="First Name" id="firstName" />
+    <input type="text" placeholder="Last Name" id="lastName" />
+    <input type="text" placeholder="Employee ID" id="employeeId" />
+    <input type="text" placeholder="Company Code" id="companyCode" />
+    <input type="email" placeholder="Email" id="email" />
+    <input type="password" placeholder="Password" id="password" />
+    <select id="role">
+      <option value="EMPLOYEE">Employee</option>
+      <option value="ADMIN">Admin</option>
+    </select>
+    <input type="number" placeholder="Year of Joining" id="yearOfJoining" />
+    <button onclick="signup()">Register</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

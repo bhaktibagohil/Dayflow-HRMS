@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leave Management</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h2>Leave Requests</h2>
+    <a href="employee_dashboard.html">Back</a>
+  </div>
+  <div class="dashboard">
+    <h3>Apply for Leave</h3>
+    <select id="leaveType">
+      <option value="1">Paid Leave</option>
+      <option value="2">Sick Leave</option>
+      <option value="3">Unpaid Leave</option>
+    </select>
+    <input type="date" id="startDate" />
+    <input type="date" id="endDate" />
+    <input type="text" id="reason" placeholder="Reason" />
+    <button id="applyLeaveBtn">Apply</button>
+
+    <h3>My Leave History</h3>
+    <table id="leaveTable"></table>
+  </div>
+  <script src="../js/leave.js"></script>
+</body>
+</html>
