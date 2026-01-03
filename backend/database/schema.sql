@@ -4,7 +4,9 @@ CREATE DATABASE dayflow_hrms;
 CREATE SCHEMA hrms;
 SET search_path TO hrms;
 
+ HEAD:backend/database/schema.sql
 
+ 4bebe4df24a3626a3ae01f9cc0a594fc2afac2e3:database/schema.sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
 
